@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/sendShipment"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Send"/>
+    <item
+        android:id="@+id/deliverShipment"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Deliver"/>
+
+</menu>

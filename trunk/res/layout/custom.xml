@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/upperLayout"
+        android:layout_width="210dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/showAll"
+        android:layout_below="@+id/editPrice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Search text: "
+            android:textColor="#FFF" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textLabel"
+            android:layout_centerHorizontal="true"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/priceLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editText"
+            android:text="Price up to:  "
+            android:textColor="#FFF" />
+
+        <EditText
+            android:id="@+id/editPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priceLabel"
+            android:layout_centerHorizontal="true"
+            android:ems="10" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lowerLayout"
+        android:layout_width="210dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upperLayout"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="10dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Search" />
+
+        <Button
+            android:id="@+id/showAll"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editPrice"
+            android:text="Show all" />
+    </RelativeLayout>
+
+</RelativeLayout>

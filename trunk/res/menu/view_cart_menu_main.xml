@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:id="@+id/checkout2"
+        android:title="Checkout"
+        android:orderInCategory="100"
+        android:showAsAction="never" 
+        />
+    
+    <item android:id="@+id/clearCart2"
+        android:title="Clear cart"
+        android:orderInCategory="100"
+        android:showAsAction="never" 
+        />
+    
+</menu>

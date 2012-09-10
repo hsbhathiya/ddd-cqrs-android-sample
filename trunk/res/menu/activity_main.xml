@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:id="@+id/add"
+        android:title="Add to cart"
+        android:orderInCategory="100"
+        android:showAsAction="never" 
+        />
+    
+    <item android:id="@+id/checkout"
+        android:title="Checkout"
+        android:orderInCategory="100"
+        android:showAsAction="never" 
+        />
+    
+      <item android:id="@+id/viewCart"
+        android:title="View cart"
+        android:orderInCategory="100"
+        android:showAsAction="never" 
+        />
+   
+      <!-- 
+       <item android:id="@+id/search"
+        android:title="Search"
+        android:orderInCategory="100"
+        android:showAsAction="never" 
+        android:icon="@drawable/button1"/>  -->
+    
+ 
+   
+</menu>
