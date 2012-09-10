@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/uilayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/findButton"
+        android:layout_marginLeft="14dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="DDD-CQRS Example project"
+            android:textStyle="bold"
+            tools:context=".MainActivity" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="Product list 3 - 10"
+            tools:context=".MainActivity" />
+    </LinearLayout>
+
+    <!--
+    to make the buttons transparent 
+    android:background="@android:color/transparent"
+    but then a differet graphic is neede to make difference when button presssed
+    -->
+
+    <Button
+        android:id="@+id/findButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:drawableRight="@drawable/find_icon" />
+
+    <Button
+        android:id="@+id/linesOrderButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/findButton"
+        android:layout_alignBottom="@+id/findButton"
+        android:layout_toLeftOf="@+id/findButton"
+        android:drawableRight="@drawable/arrow_up_icon" />
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group" />
+
+</RelativeLayout>
